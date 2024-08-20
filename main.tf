@@ -31,7 +31,7 @@ resource "aws_instance" "blog" {
 
 resource "aws_security_group" "blog" {
   name = "blog"
-  description "Allow everything"
+  description = "Allow everything"
 
   vpc_id = data.aws_vpc.deafult.id
 }
