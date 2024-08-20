@@ -12,7 +12,7 @@ variable "ami_flter" {
 }
 
 variable "environment" {
-  deciption = "Development environment"
+  description = "Development environment"
 
   type = object({    
     name = string
