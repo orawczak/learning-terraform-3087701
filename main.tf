@@ -15,7 +15,7 @@ data "aws_ami" "app_ami" {
 }
 
 data "aws_vpc" "default" {
-  deafult = true
+  default = true
 }
 
 resource "aws_instance" "blog" {
@@ -33,7 +33,7 @@ resource "aws_security_group" "blog" {
   name = "blog"
   description = "Allow everything"
 
-  vpc_id = data.aws_vpc.deafult.id
+  vpc_id = data.aws_vpc.default.id
 }
 
 resource "aws_security_group_rule" "blog_http_in" {
