@@ -63,7 +63,6 @@ module "blog_alb" {
       }
     }
   }  
-  }
 
   tags = {
     Environment = "Development"
