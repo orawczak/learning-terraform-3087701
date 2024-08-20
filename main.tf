@@ -70,7 +70,7 @@ module "blog_alb" {
       protocol         = "HTTP"
       port             = 80
       target_type      = "instance"
-      target_id        = autoscaling.aws_instance.blog.id
+      target_id        = module.autoscaling.aws_instance.blog.id
     }
   }
 
