@@ -62,16 +62,7 @@ module "blog_alb" {
         status_code = "HTTP_301"
       }
     }
-  }
-
-  target_groups = {
-    ex-instance = {
-      name_prefix      = "blog-"
-      protocol         = "HTTP"
-      port             = 80
-      target_type      = "instance"      
-      target_id = module.autoscaling.image_id
-    }
+  }  
   }
 
   tags = {
