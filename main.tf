@@ -60,5 +60,5 @@ resource "aws_security_group" "blog" {
   name = "blog"
   description = "Allow everything"
 
-  vpc_id = module.blog_vpc.vpc.id
+  vpc_id = module.blog_vpc.vpc_id
 }
